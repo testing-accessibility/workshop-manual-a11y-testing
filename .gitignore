@@ -1,0 +1,9 @@
+node_modules
+package-lock.json
+.next
+public
+dist
+.parcel-cache
+.DS_Store
+**/.DS_Store
+.cache
