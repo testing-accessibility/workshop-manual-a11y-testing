@@ -22,6 +22,7 @@
 <!-- prettier-ignore-start -->
 [![GPL 3.0 License][license-badge]][license]
 [![Code of Conduct][coc-badge]][coc]
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 <!-- prettier-ignore-end -->
 
 ## Prerequisites
@@ -31,8 +32,10 @@
 
 ## Options for working with this material
 
-- Browser-based setup with GitPod
-  - Note: GitPod may have accessibility issues
+- [Browser-based setup with GitPod](https://gitpod.io/from-referrer/)
+  - GitPod provides a cloud-based development environment similar to VS Code  
+  - Requires a login with Github
+  - **Note**: GitPod may have accessibility issues
 - Download a zip file for local setup
 - Clone this Git repo for local setup (see instructions below)
 
