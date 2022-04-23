@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CampSpots - Passes</title>
+        <link rel="stylesheet" type="text/css" href="../styles.scss" />
+        <meta name="viewport" content="initial-scale=1" />
+    </head>
+    <body class="page-plans">
+        <include src="_includes/header.html"></include>
+        <div id="main">
+            <section class="layout-centered">
+                <header class="page-header">
+                    <div class="page-header-content layout">
+                        <h2 class="primary-heading h1-style">Pick a Plan and Start Your Adventure Today!</h2>
+                    </div>
+                </header>
+                <article class="layout">
+                    <ul class="plan-list">
+                        <li class="plan-basic">
+                            <div>
+                                <h3>CampSpots <span>Basic</span></h3>
+                                <h4>$99<span>/year</span></h4>
+                                <p class="subhead">Renewed annually</p>
+
+                                <ul>
+                                    <li>
+                                        <span class="icon-checkmark-gray"></span>
+                                        <span class="text">Unlimited overnight stays with No Camping Fees</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon-checkmark-gray"></span>
+                                        <span class="text">100% money back guarantee</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon-x"></span>
+                                        <span class="text"><del>Access to spa facilities & restaurants</del></span>
+                                    </li>
+                                </ul>
+                                <button id="btn-join-basic">Join Now</button>
+                                <p>Vitae maximus turpis tempor <strong>nec</strong>.</p>
+                            </div>
+                        </li>
+                        <li class="plan-pro">
+                            <div>
+                                <span class="icon-proplan"></span>
+                                <h3>CampSpots <span>Pro</span></h3>
+                                <h4>$139<span>/year</span></h4>
+                                <p class="subhead">Renewed annually</p>
+
+                                <ul>
+                                    <li>
+                                        <span class="icon-checkmark-orange"></span>
+                                        <span class="text">Unlimited overnight stays with No Camping Fees</span></li>
+                                    <li>
+                                        <span class="icon-checkmark-orange"></span>
+                                        <span class="text">100% money back guarantee</span>
+                                    </li>
+                                    <li>
+                                        <span class="icon-checkmark-orange"></span>
+                                        <span class="text">Access to spa facilities & restaurants</span>
+                                    </li>
+                                </ul>
+                                <button id="btn-join-pro">Join Now</button>
+                                <p>Lorem ipsum dolor <strong>sit</strong> amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </div>
+
+        <div class="payment-modal" role="dialog" hidden>
+            <header>
+                <button class="btn-close-dialog">X</button>
+                <img src="/images/icons/icon-proplan.svg" alt="" />
+                <div id="header-basic">
+                    <h2>CampSpots<span>Basic</span></h2>
+                    <h3>$99/year</h3>
+                </div>
+                <div id="header-pro">
+                    <h2>CampSpots<span>Pro</span></h2>
+                    <h3>$139/year</h3>
+                </div>
+            </header>
+            <section class="payment-form">
+                <h3>Donate to support local sites</h3>
+                <form>
+                    <div class="control-group radios">
+                        <label>
+                            <input id="amt_3" name="amounts" type="radio" value="3" />
+                            $3
+                        </label>
+                        <label>
+                            <input id="amt_5" name="amounts" type="radio" value="5" />
+                            $5
+                        </label>
+                        <label>
+                            <input id="amt_10" name="amounts" type="radio" value="10" />
+                            $10
+                        </label>
+                        <label class="custom-radio-group">
+                            <input id="amt_custom" name="amounts" type="radio" value="Custom" />
+                            <input type="text" id="amt_custom_text" placeholder="$ Other amount" />
+                        </label>
+                    </div>
+                    <div class="payment-buttons">
+                        <h3>Payment Method</h3>
+                        <div>
+                            <button type="button" class="payment-button active">
+                                <img alt="Credit card" width="25px" src="/images/icons/icon-credit-card.svg">
+                                <span>Credit card</span>
+                            </button>
+                            <button type="button" class="payment-button">
+                                <img alt="PayPal" width="50px" src="/images/icons/paypal-inactive-dark.svg">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="payment-fields">
+                        <div class="control-group">
+                            <label for="name" class="visually-hidden">Cardholder name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" />
+                        </div>
+                        <div class="control-group">
+                            <div class="media-img-after">
+                                <img src="/images/icons/credit-card-icons.png" style="width: 127px; height: 20px;" aria-hidden="true" />
+                                <label for="cc-number" class="visually-hidden">Credit Card Number</label>
+                                <input type="number" name="cc-number" id="cc-number" placeholder="Credit card number" />
+                            </div>
+                        </div>
+                        <div class="control-group row">
+                            <div>
+                                <label for="expiry" class="visually-hidden">Expiration</label>
+                                <input type="text" name="expiry" id="expiry" placeholder="Month/Year" />
+                            </div>
+                            <div>
+                                <label for="cvc" class="visually-hidden">CVC Code</label>
+                                <input type="text" name="cvc" id="cvc" placeholder="CVC" max-length="4" />
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label for="phone-number" class="visually-hidden">Phone Number</label>
+                            <input type="number" name="number" id="number" placeholder="Phone number" />
+                        </div>
+                        <div class="control-group">
+                            <button class="btn-pay">
+                                <span class="text text-pay-pro">Pay $139</span>
+                                <span class="text text-pay-basic">Pay $99</span>
+                                <span class="icon-lock"></span>
+                            </button>
+                        </div>
+                        <p class="subhead">Secure payment processing by <a href="https://stripe.com">Stripe</a>.</p>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <div class="modal-curtain" hidden></div>
+        <include src="_includes/footer.html"></include>
+        <script src="/js/menu.js"></script>
+        <script src="/js/subscription-modal.js"></script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+/* Careers Page */
+.page-careers {
+    .page-header {
+        align-items: center;
+        background: url(/images/careers-header.png) no-repeat;
+        background-position: top center;
+        background-size: auto;
+        min-height: 420px;
+
+        .page-header-content {
+            margin-top: 2em;
+            text-align: center;
+        }
+    }
+    .three-parts {
+        border-bottom: 2px solid var(--color-border-plan);
+        padding-bottom: 4em;
+        text-align: left;
+        
+        h4 {
+            font-weight: bold;
+
+            &:not(:first-of-type) {
+                margin-top: 3em;
+            }
+        }
+        .item {
+            padding-left: 0;
+
+            p {
+                color: var(--color-accent-muted);
+            }
+        }
+    }
+    article a {
+        color: var(--color-accent-cta);
+        font-weight: bold;
+        text-decoration: none;
+    }
+    article.careers-portal-cta {
+        padding-top: 0;
+
+        &> div {
+            background-image: url(/images/careers-portal-cta.png);
+            background-repeat: no-repeat;
+            background-position: center right;
+            border: 2px solid var(--color-border-plan);
+            border-radius: 5px;
+            display: inline-block;
+            min-width: 430px;
+            padding: 1.25em;
+
+            h3, p {
+                margin: 0;
+            }
+            p.subhead {
+                color: var(--color-accent-muted);
+                margin-bottom: 1em;
+                margin-top: 0.25em;
+            }
+            a .icon:before {
+                content: '→';
+            }
+        }
+    }
+}
+@media screen and (max-width: 430px) {
+    .page-careers article.careers-portal-cta > div {
+        background-image: none;
+        min-width: 100%;
+    }
+}

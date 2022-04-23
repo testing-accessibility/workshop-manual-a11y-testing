@@ -1,0 +1,73 @@
+/* Events page */
+.page-events {
+    .page-header {
+        display: block;
+        min-height: 0;
+        position: relative;
+    }
+    .header-video {
+        video {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .page-header-content {
+        bottom: 0;
+        display: flex;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 1;
+    }
+    article.wide-layout {
+        margin-top: 4em;
+    }
+    .event-list {
+        font-size: 1.2rem;
+
+        li {
+            margin-bottom: 1em;
+        }
+    }
+    .aside {
+        background-color: var(--bgcolor-aside);
+        padding: 1em;
+    }
+    .headline-flex {
+        display: flex;
+    }
+    svg {
+        animation: rotation 10s linear infinite;
+        display: block;
+        margin-left: auto;
+        width: 150px;
+        
+        .one {
+            transition: fill 1s;
+        }
+        &:hover {
+          .one {
+            fill: #ff0000;
+          }
+        }
+    }
+    .two {
+        fill: #FFCE00;
+    }
+    .one {
+        fill: #ffb000;
+    }
+    .middle {
+        fill: #FFFF00;
+    }
+    
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}

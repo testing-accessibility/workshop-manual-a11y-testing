@@ -1,0 +1,92 @@
+
+/* Icons */
+.icon-btn,
+.wrap-icon-text {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    position: relative;
+    -webkit-appearance: none;
+}
+.icon-btn .text,
+.wrap-icon-text .text {
+    margin-left: 1em;
+}
+.tooltip {
+    background-color: var(--color-accent-dark);
+    border-radius: 10px;
+    bottom: 100%;
+    color: var(--color-primary-light);
+    display: none;
+    left: 50%;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.tooltip:after {
+    border: 10px solid var(--color-accent-dark);
+    border-color: var(--color-accent-dark) transparent transparent transparent;
+    content: '';
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+}
+.tooltip.active {
+    display: block;
+}
+span[class^="icon-"] {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+}
+.icon-food {
+    background-image: url(/images/icons/food.svg);
+}
+.icon-wifi {
+    background-image: url(/images/icons/wi-fi.svg);
+}
+.icon-tables {
+    background-image: url(/images/icons/tables.svg);
+}
+.icon-bathrooms {
+    background-image: url(/images/icons/toilet.svg);
+}
+.icon-water {
+    background-image: url(/images/icons/hands-washing.svg);
+}
+.icon-dock {
+    background-image: url(/images/icons/boat.svg);
+}
+.icon-swimming {
+    background-image: url(/images/icons/water.svg);
+}
+.icon-no-service {
+    background-image: url(/images/icons/no-service.svg);
+}
+.icon-cabins {
+    background-image: url(/images/icons/bed.svg);
+}
+.icon-ADA {
+    background-image: url(/images/icons/wheelchair.svg);
+}
+.icon-proplan {
+    background-image: url(/images/icons/icon-proplan.svg);
+}
+.icon-checkmark-orange {
+    background-image: url(/images/icons/icon-checkmark-orange.svg);
+}
+.icon-checkmark-gray {
+    background-image: url(/images/icons/icon-checkmark-gray.svg);
+}
+.icon-x {
+    background-image: url(/images/icons/icon-x.svg);
+}
+.icon-lock {
+    background-image: url(/images/icons/icon-lock.svg);
+}

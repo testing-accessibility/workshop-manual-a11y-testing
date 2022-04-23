@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CampSpots - Submit Your Spot</title>
+        <link rel="stylesheet" type="text/css" href="./styles.scss" />
+        <meta name="viewport" content="initial-scale=1" />
+    </head>
+    <body class="header-overlap page-submit-listing">
+        <include src="_includes/header.html"></include>
+        <div id="main">
+            <section aria-labelledby="heading-about-1">
+                <header class="page-header">
+                    <div class="page-header-content layout">
+                        <h2 class="primary-heading h1-style" id="heading-about-1">Submit Your Spot</h2>
+                    </div>
+                </header>
+                <article class="form-wrap">
+                    <div class="layout">
+                        <h3>Got a camping spot our community would enjoy? Tell us about it!</h3>
+                        <form>
+                            <div class="two-parts-50-50">
+                                <div class="form-field">
+                                    <label for="submittername">Your name <span class="asterisk" abbr="required">*</span></label>
+                                    <input type="text" id="submittername" />
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Your email address <span class="asterisk" abbr="required">*</span></label>
+                                    <input type="email" id="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
+                                </div>
+                            </div>
+                            <div class="two-parts-50-50">
+                                <div class="form-field">
+                                    <label for="sitename">Site Name <span class="asterisk" abbr="required">*</span></label>
+                                    <input type="text" id="sitename" />
+                                </div>
+                                <div class="form-field">
+                                    <label for="location">Location <span class="asterisk" abbr="required">*</span></label>
+                                    <input type="text" id="location" />
+                                </div>
+                            </div>
+                            <div class="two-parts-50-50">
+                                <div class="form-field">
+                                    <label for="fee">Nightly fee</label>
+                                    <input type="number" id="fee" placeholder="$" />
+                                </div>
+                                <div class="form-field">
+                                    <label for="ownership">
+                                        Can the public legally camp here? <span class="asterisk" abbr="required">*</span>
+                                    </label>
+                                    <input type="checkbox" id="ownership" name="ownership" value="Owned" />
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="notes">Notes</label>
+                                <textarea id="notes"></textarea>
+                            </div>
+                            <p id="key" class="asterisk">* Fields are required.</p>
+                            <div class="form-submit">
+                                <button class="btn-submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <include src="_includes/footer.html"></include>
+        <script src="/js/menu.js"></script>
+    </body>
+</html>

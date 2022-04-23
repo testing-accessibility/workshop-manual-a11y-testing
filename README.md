@@ -101,11 +101,10 @@ This should start the site for your browser at the address indicated in your Ter
 
 ## Working through the exercises
 
-This part of the project has one **before** folder with **after** files for each of the 5 sections. The two pages we’ll work on in this Workshop are the Homepage and About page, starting from this URL: `http://localhost:1234/exercises-start`
+This part of the project has **before** and **after** files for each of the 5 sections. The two pages we’ll work on in this Workshop are the Homepage and About page, starting from this URL: `http://localhost:1234`
 
 Here are the example source files for this workshop:
 
-- [exercises-start](https://github.com/testing-accessibility/workshop-manual-a11y-testing/tree/main/exercises-start)
 - [exercise1-keyboard](https://github.com/testing-accessibility/workshop-manual-a11y-testing/tree/main/exercise1-keyboard)
 - [exercise2-devtools](https://github.com/testing-accessibility/workshop-manual-a11y-testing/tree/main/exercise2-devtools/)
 - [exercise3-extensions](https://github.com/testing-accessibility/workshop-manual-a11y-testing/tree/main/exercise3-extensions/)

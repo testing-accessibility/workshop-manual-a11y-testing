@@ -1,0 +1,344 @@
+/* Passes/Plans Page */
+.page-plans {
+    background-color: var(--bgcolor-plans-page);
+
+    article.layout {
+        padding-top: 1em;
+    }
+}
+.page-plans {
+    p {
+        color: var(--color-accent-muted);
+        font-size: 0.8rem;
+        margin-left: 5em;
+        margin-top: 1.5em;
+        margin-right: 5em;
+    }
+    .plan-list {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style: none;
+        }
+        & > li {
+            padding: 0;
+            width: 50%;
+
+            & > div {
+                border: 2px solid var(--color-border-plan);
+                border-radius: 5px;
+                padding: 2em 1em;
+            }
+        }
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1em;
+
+            span {
+                font-weight: bold;
+            }
+        }
+        h4 {
+            font-size: 2rem;
+            margin-bottom: 0;
+            margin-top: 0;
+
+            span {
+                color: var(--color-accent-muted);
+                font-size: 1.2rem;
+            }
+        }
+        ul {
+            margin: 3em 0;
+            padding: 0;
+        }
+        li li {
+            display: flex;
+            flex-direction: row;
+            margin: 0 0 1em;
+            padding: 0 2em;
+            text-align: left;
+
+            span[class^="icon-"] {
+                flex-shrink: 0;
+                height: 1rem;
+                margin-right: 0.5em;
+                width: 1rem;
+            }
+        }
+        p.subhead {
+            margin-top: 0.5em;
+        }
+        button {
+            border: none;
+            border-radius: 5px;
+            box-shadow: none;
+            color: var(--color-primary-light);
+            cursor: pointer;
+            display: inline-block;
+            font-weight: bold;
+            padding: 1em 4em;
+            -webkit-appearance: none;
+        }
+        li.plan-basic {
+            margin-left: auto;
+
+            h3 span {
+                color: var(--color-accent-muted);
+            }
+            button {
+                background-color: var(--color-accent-muted);
+            }
+        }
+        li.plan-pro {
+            margin-left: 0;
+            margin-right: auto;
+
+            &> div {
+                background-color: var(--color-primary-light);
+                box-shadow: 0px 5px 30px -5px rgba(0,0,0,0.10);
+                padding-bottom: 4rem;
+                padding-top: 4rem;
+                position: relative;
+
+                &:before {
+                    background-color: var(--color-accent-tertiary);
+                    content: '';
+                    border-radius: 5px 5px 0 0;
+                    display: block;
+                    height: 7px;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                }
+            }
+            .icon-proplan {
+                height: 6.2rem;
+                margin-top: -3rem;
+                position: absolute;
+                margin-left: -2.9rem;
+                left: 50%;
+                top: 0;
+                width: 5.8rem;
+            }
+            h3 span {
+                color: var(--color-accent-tertiary);
+            }
+            button {
+                background-color: var(--color-accent-tertiary);
+            }
+        }
+    }
+}
+.payment-modal {
+    background-color: var(--bgcolor-plans-page);
+    border-radius: 5px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 28rem;
+    min-width: 18rem; 
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    top: 10em;
+    z-index: 2;
+    width: 100%;
+
+    header div {
+        display: none;
+    }
+    .btn-pay {
+        span.text {
+            display: none;
+        }
+    }
+    &.basic {
+        #header-basic,
+        span.text-pay-basic {
+            display: block;
+        }
+    }
+    &.pro {
+        #header-pro,
+        span.text-pay-pro {
+            display: block;
+        }
+    }
+
+    header {
+        background-color: var(--color-primary-light);
+        border-bottom: 2px dotted var(--color-border-dash);
+        display: flex;
+        flex-direction: row;
+        padding: 1.5em 2em;
+
+        button.btn-close-dialog {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 0.5em;
+            position: absolute;
+            right: 0.5em;
+            top: 0.5em;
+            --webkit-appearance: none;
+        }
+        img {
+            margin-right: 1em;
+            max-width: 4rem;
+        }
+
+        #header-pro h2 span {
+            color: var(--color-accent-tertiary);
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin: 0.5em 0 0.25em;
+
+            span {
+                color: var(--color-accent-muted);
+                font-weight: bold;
+                display: inline-block;
+                margin-left: 0.25em;
+            }
+        }
+        h3 {
+            color: var(--color-accent-muted);
+            font-size: 1rem;
+            margin: 0;
+        }
+    }
+    section {
+        padding: 2em;
+
+        h3 {
+            color: var(--color-accent-muted);
+            font-size: 0.75rem;
+            font-weight: bold;
+            letter-spacing: 0.04rem;
+            margin: 0;
+            text-transform: uppercase;
+        }
+        .payment-buttons {
+            margin-top: 2em;
+
+            div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1em;
+                margin: 1em 0;
+                width: 100%;
+            }
+            button {
+                background-color: transparent;
+                border: 2px solid var(--color-border-input);
+                border-radius: 5px;
+                outline: 0;
+                padding: 1.5em;
+                text-align: center;
+
+                span {
+                    color: var(--color-accent-muted);
+                    display: block;
+                }
+                &.active {
+                    border-color: var(--color-border-input-active);
+                }
+            }
+        }
+        .control-group {
+            margin: 1em 0;
+            position: relative;
+
+            &.radios {
+                align-items: center;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 3fr;
+
+                .custom-radio-group {
+                    align-items: center;
+                    display: flex;
+                }
+            }
+            &.row {
+                display: grid;
+                grid-template-columns: 7fr 3fr;
+                gap: 1em;
+            }
+            .media-img-after {
+                position: relative;
+                width: 100%;
+
+                img {
+                    position: absolute;
+                    right: 0.5em;
+                    top: 0.5em;
+                }
+            }
+
+            input[type="text"],
+            input[type="number"] {
+                border: 2px solid var(--color-border-input);
+                border-radius: 5px;
+                padding: 0.75em;
+
+                &:not(#amt_custom_text) {
+                    width: 100%;
+                }
+            }
+        }
+        button.btn-pay {
+            background-color: var(--color-accent-cta);
+            border: none;
+            border-radius: 5px;
+            color: var(--color-primary-light);
+            cursor: pointer;
+            display: block;
+            font-weight: bold;
+            padding: 1em;
+            position: relative;
+            width: 100%;
+            --webkit-appearance: none;
+            
+            .icon-lock {
+                height: 1rem;
+                min-width: 0.85rem;
+                position: absolute;
+                top: 1em;
+                right: 1em;
+            }
+        }
+        p.subhead {
+            margin-left: 0;
+            text-align: left;
+
+            a {
+                color: inherit;
+            }
+        }
+    }
+}
+@media screen and (max-width: 640px) {
+    .page-plans .plan-list {
+        flex-direction: column;
+
+        &> li {
+            margin-right: auto;
+            width: auto;
+        }
+        li.plan-basic {
+            margin-bottom: 4em;
+        }
+        li.plan-pro {
+            margin-left: auto;
+        }
+    }
+}
