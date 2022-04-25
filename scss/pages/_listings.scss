@@ -1,57 +1,60 @@
 /* Listings pages */
 .page-listings {
     background-color: var(--bgcolor-content-page);
-}
-.page-listings .listings-header {
-    align-items: center;
-    display: flex;
-    margin-bottom: 1em;
-}
-.page-listings .listings-header h1,
-.page-listings .listings-header h2 {
-    font-size: 1.75rem;
-    font-weight: normal;
-}
-.page-listings .listings-header .dropdown-list {
-    margin-left: auto;
-}
-.page-listings .listings-list {
-    background-color: #fff;
-    padding-top: 0.5em;
-}
-.page-listings .listings-list .wide-layout {
-    margin-top: 2em;
-    margin-bottom: 0;
-}
 
-.page-listing-detail h2,
-.page-listing-detail h3 {
-    font-size: 1rem;
-    font-weight: 500;
-}
-.page-listing-detail .description-text {
-    margin-bottom: 4em;
-}
-.page-listing-detail .detail-images {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-.page-listing-detail .detail-images img {
-    max-width: 100%;
-}
-.page-listing-detail .detail-images img:nth-child(2) {
-    grid-column: 2 / 3;
-    grid-row: span 2;
-}
-.page-listing-detail .detail-images img:nth-child(3) {
-    margin-top: auto;
-}
-@media screen and (max-width: 540px) {
-    .page-listing-detail .detail-images {
-        display: block;
+    .listings-header {
+        align-items: center;
+        display: flex;
+        margin-bottom: 1em;
+        
+        h1, h2 {
+            font-size: 1.75rem;
+            font-weight: normal;
+        }
+        .dropdown-list {
+            margin-left: auto;
+        }
     }
-    .page-listing-detail img {
-        width: 100%;
+    .listings-list {
+        background-color: #fff;
+        padding-top: 0.5em;
+        
+        .wide-layout {
+            margin-top: 2em;
+            margin-bottom: 0;
+        }
+    }
+}
+.page-listing-detail {
+    h2, h3 {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .description-text {
+        margin-bottom: 4em;
+    }
+    .detail-images {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        img {
+            max-width: 100%;
+        }
+        img:nth-child(2) {
+            grid-column: 2 / 3;
+            grid-row: span 2;
+        }
+        img:nth-child(3) {
+            margin-top: auto;
+        }
+    }
+    @media screen and (max-width: 540px) {
+        .detail-images {
+            display: block;
+        }
+        img {
+            width: 100%;
+        }
     }
 }
 .listing-excerpt {
@@ -60,23 +63,26 @@
     gap: 1em;
     grid-template-columns: 1fr 5fr;
     padding-bottom: 2em;
-}
-.listing-excerpt img {
-    max-width: 300px;
-}
-.listing-excerpt header {
-    align-items: flex-start;
-    display: flex;
-    margin-bottom: 1em;
-}
-.listing-excerpt header h3 {
-    font-size: 1.25rem;
-    margin: 0;
-}
-.listing-excerpt p {
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin: 0;
+
+    img {
+        max-width: 300px;
+    }
+
+    header {
+        align-items: flex-start;
+        display: flex;
+        margin-bottom: 1em;
+
+        h3 {
+            font-size: 1.25rem;
+            margin: 0;
+        }
+    }
+    p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0;
+    }
 }
 .amenity-icons {
     display: flex;
@@ -84,23 +90,25 @@
     margin-left: auto;
     margin-top: 0;
     padding: 0;
-}
-.amenity-icons.grid {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(3, 1fr);
-    margin-left: 0;
-    max-width: 480px;
-}
-.amenity-icons .grid li {
-    margin-top: 0;
-    margin-left: 0.25em;
-}
-.amenity-icons span[class^='icon-'] {
-    background-color: #F8F9FA;
-    border: 1px solid #E6EBEF;
-    border-radius: 3px;
-    display: inline-block;
-    height: 2rem;
-    width: 2rem;
+
+    &.grid {
+        display: grid;
+        gap: 1em;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 0;
+        max-width: 480px;
+    }
+
+    li {
+        margin-top: 0;
+        margin-left: 0.25em;
+    }
+    span[class^='icon-'] {
+        background-color: #F8F9FA;
+        border: 1px solid #E6EBEF;
+        border-radius: 3px;
+        display: inline-block;
+        height: 2rem;
+        width: 2rem;
+    }
 }
