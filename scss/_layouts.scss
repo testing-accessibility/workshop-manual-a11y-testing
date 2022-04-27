@@ -70,6 +70,11 @@
 }
 .three-parts .item {
     padding: 1em;
+
+    img {
+        display: inline-block;
+        margin-top: 1em;
+    }
 }
 .item.green {
     background-color: #EEFDF2;
@@ -91,7 +96,8 @@
     font-weight: bold;
     margin: 2em 0 1em;
 }
-.item p {
+.item p,
+.item div {
     font-size: 1rem;
     line-height: 1.5;
 }

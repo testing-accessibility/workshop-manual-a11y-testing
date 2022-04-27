@@ -21,7 +21,7 @@
     align-items: end;
     display: grid;
     gap: 1em;
-    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-columns: 5fr 5fr 1fr;
     margin: 0 auto 0;
 }
 @media screen and (max-width: 640px) {
@@ -46,10 +46,11 @@
     background-color: #F8F8F8;
     margin-left: auto;
     max-width: 620px;
-    padding: 1.5em 1.5em 4.5em 4.5em;
+    padding: 1.5em 1.5em 8.5em 6.5em;
     width: 100%;
 }
-.page-home .content-block div {
+.page-home .content-block div,
+.page-home .content-block p {
     color: #4A4B49;
     font-size: 1rem;
     margin: 1em 0;
