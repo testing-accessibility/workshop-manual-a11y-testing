@@ -24,12 +24,6 @@
     grid-template-columns: 5fr 5fr 1fr;
     margin: 0 auto 0;
 }
-@media screen and (max-width: 640px) {
-    .page-home .form-wrap {
-        grid-template-columns: none;
-        grid-template-rows: auto;
-    }
-}
 .page-home .two-part-overlap {
     padding-top: 3em;
     position: relative;

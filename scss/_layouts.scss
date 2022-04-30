@@ -46,28 +46,6 @@
     gap: 1em;
     text-align: center;
 }
-@media screen and (max-width: 780px) {
-    .layout {
-        width: 100%;
-    }
-    [class*='two-parts'] {
-        display: block;
-    }
-    .two-parts-50-50 .content-block {
-        margin-bottom: 2em;
-    }
-}
-@media screen and (max-width: 540px) {
-    .three-parts {
-        grid-template-columns: none;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
-}
-@media screen and (max-width: 420px) {
-    .three-parts {
-        display: block;
-    }
-}
 .three-parts .item {
     padding: 1em;
 
