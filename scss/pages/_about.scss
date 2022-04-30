@@ -12,6 +12,9 @@
     font-size: 1rem;
     margin-bottom: 0.5em;
 }
+.page-about .form-wrap h6 {
+    margin-bottom: 0.5em;
+}
 .page-about .content-block div {
     font-size: 1rem;
     line-height: 1.5;
@@ -35,4 +38,5 @@
 .page-about .content-block .icon-house {
     background: transparent url(/images/icons/icon-location.svg) no-repeat;
     background-size: contain;
+    filter: invert(1);
 }

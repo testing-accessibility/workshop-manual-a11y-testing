@@ -1,5 +1,6 @@
 /* Header and Mega-Nav */
 #header {
+    color: var(--color-accent-mediumdark);
     padding-top: 1em;
     position: relative;
 }
@@ -43,7 +44,7 @@
 }
 #header-logo a {
     align-items: center;
-    color: inherit;
+    color: var(--color-accent-dark);
     display: flex;
     font-weight: 500;
     padding: 1.5em;
@@ -57,7 +58,6 @@
 #header-login a {
     color: inherit;
     display: block;
-    opacity: 0.6;
     padding: 1.65em;
     text-decoration: none;
 }
@@ -73,7 +73,7 @@
     width: 100%;
 }
 .megamenu-navitem {
-    color: var(--color-accent-dark);
+    color: var(--color-accent-mediumdark);
     cursor: pointer;
     font-size: 0.9rem;
     padding: 1.9em;
