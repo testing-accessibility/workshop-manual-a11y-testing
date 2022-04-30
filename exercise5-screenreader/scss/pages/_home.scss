@@ -1,0 +1,109 @@
+/* Homepage */
+
+.page-home #header {
+    background: url(/images/backpacking1.jpg) no-repeat;
+    background-position: top center;
+    background-size: contain;
+    min-height: 640px;
+}
+#home-form {
+    background-color: var(--bgcolor-form);
+    border-radius: 3px;
+    box-shadow: 0 10px 30px #00000012;
+    margin-top: -60px;
+    padding: 1.5em 2em 2em;
+}
+#home-form .label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+.page-home .form-wrap {
+    align-items: end;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 5fr 5fr 1fr;
+    margin: 0 auto 0;
+}
+@media screen and (max-width: 640px) {
+    .page-home .form-wrap {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+}
+.page-home .two-part-overlap {
+    padding-top: 3em;
+    position: relative;
+}
+.page-home .content-block-wrap {
+    position: relative;
+}
+.page-home .content-block-wrap img {
+    float: left;
+    margin-right: 2em;
+    margin-top: -2em;
+}
+.page-home .content-block {
+    background-color: #F8F8F8;
+    margin-left: auto;
+    max-width: 620px;
+    padding: 1.5em 1.5em 8.5em 6.5em;
+    width: 100%;
+}
+.page-home .content-block div,
+.page-home .content-block p {
+    color: #4A4B49;
+    font-size: 1rem;
+    margin: 1em 0;
+}
+.page-home .link-block {
+    font-size: 1rem;
+    margin-left: 1em;
+    margin-top: -2em;
+    max-width: 300px;
+}
+@media screen and (max-width: 840px) {
+    .page-home #header {
+        background-size: cover;
+        min-height: 355px;
+    }
+    .page-home .content-block-wrap img {
+        margin-bottom: 1em;
+    }
+    .page-home .link-block {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    .page-home .content-block-wrap img {
+        width: 100%;
+    }
+    .page-home .content-block {
+        padding: 1.5em;
+    }
+}
+.page-home .link-list {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.page-home .link-list a {
+    color: #4A4B49;
+    display: block;
+    margin: 0.25em 0;
+    padding: 0.25em 0;
+    text-decoration: none;
+}
+.page-home .link-list a:before {
+    content: none;
+}
+.page-home .link-list a span:before {
+    color: var(--color-accent-dark);
+    content: '\02C6';
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0 0.5rem 0 0;
+    transform: rotate(90deg);
+}

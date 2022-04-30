@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CampSpots - About Us</title>
+        <link rel="stylesheet" type="text/css" href="../styles.scss" />
+        <meta name="viewport" content="initial-scale=1" />
+    </head>
+    <body class="page-about">
+        <include src="exercise5-screenreader/_includes/header.html"></include>
+        <main id="main">
+            <section class="layout two-parts-50-50" aria-labelledby="header-about">
+                <div class="content-block">
+                    <h2 id="header-about">About CampSpots</h2>
+                    <p>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</p>
+
+                    <p>At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future.</p>
+                        
+                    <p>By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life.</p>
+                </div>
+                <img src="/images/about-image.jpg" alt="A woman on her laptop with a phone, next to the beach" />
+            </section>
+            <section class="form-wrap" aria-label="Contact form and details">
+                <div class="layout two-parts-60-40">
+                    <div>
+                        <h2>Contact</h2>
+                        <form class="form">
+                            <div class="form-field">
+                                <label for="message">Message</label>
+                                <textarea id="message" placeholder="Type your message here..."></textarea>
+                            </div>
+                            <div class="form-submit">
+                                <button class="btn-send" type="submit">Send<span class="icon-arrow"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="content-block">
+                            <h3 class="h4-style">Email</h3>
+                            <address class="contact"><span class="icon-at">@</span> <a href="#">team@campspots.com</a></address>
+                            <h3 class="h4-style">Address</h3>
+                            <address class="contact"><span class="icon-house"></span> 6006 Mountain Drive<br />Acme, WA</address>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="../menu.js"></script>
+        <script>
+            var el = document.getElementById('link-about');
+            el.setAttribute('aria-current', 'page')
+        </script>
+    </body>
+</html>

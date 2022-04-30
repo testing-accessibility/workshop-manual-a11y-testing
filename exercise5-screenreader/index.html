@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CampSpots</title>
+        <link rel="stylesheet" type="text/css" href="./styles.scss" />
+        <meta name="viewport" content="initial-scale=1" />
+    </head>
+    <body class="page-home">
+        <include src="exercise5-screenreader/_includes/header.html"></include>
+        <main id="main">
+            <form class="main-search form-wrap layout" id="home-form">
+                <div class="form-field">
+                    <label for="input-where-to">Where to?</label>
+                    <div class="custom-input">
+                        <span class="icon-lookingglass"></span>
+                        <input id="input-where-to" type="text" placeholder="Try Oregon, Colorado..." />
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="input-dates">Dates</label>
+                    <div class="custom-input">
+                        <span class="icon-calendar"></span>
+                        <input id="input-dates" type="text" placeholder="Enter dates" />
+                    </div>
+                </div>
+                <div class="form-field form-submit">
+                    <button class="btn-submit btn-lookingglass" onclick="javascript: alert('Submitted!');" aria-label="submit" type="submit">
+                        <span class="icon-lookingglass-white"></span>
+                    </button>
+                </div>
+            </form>
+            <section class="wide-layout two-part-overlap" aria-label="Site description">
+                <div class="content-block-wrap">
+                    <img src="/images/tents.jpg" alt="Tents at sunset" />
+                    <div class="content-block">
+                        <h2 class="h3-style">Rest and relaxation is a part of life</h2>
+                        <p>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</p>
+
+                        <p>At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future.</p>
+                            
+                        <p>By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life.</p>
+                    </div>
+                </div>
+                <div class="link-block">
+                    <h3 class="h4-style">Places to visit</h3>
+                    <ul class="link-list">
+                        <li><a href="#">
+                            <span class="icon" aria-hidden="true"></span>
+                            New York
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon" aria-hidden="true"></span>
+                            Texas
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon" aria-hidden="true"></span>
+                            Utah
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon" aria-hidden="true"></span>
+                            Oregon
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon" aria-hidden="true"></span>
+                            Alaska
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon" aria-hidden="true"></span>
+                            Hawaii
+                        </a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="layout" aria-label="Callouts">
+                <ul class="three-parts">
+                    <li class="item green">
+                        <img src="/images/icons/icon-treetag.svg" alt="" />
+                        <h3 class="header">Find your next adventure</h3>
+                        <p>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                    <li class="item yellow">
+                        <img src="/images/icons/icon-backpack.svg" alt="" />
+                        <h3 class="header">Know what to pack and what to leave at home</h3>
+                        <p>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                    <li class="item blue">
+                        <img src="/images/icons/icon-kayak.svg" alt="" />
+                        <h3 class="header">Arrange the best activities</h3>
+                        <p>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <include src="exercise3-extensions/_includes/footer.html"></include>
+        <script src="menu.js"></script>
+        <script>
+            var el = document.getElementById('link-home');
+            el.setAttribute('aria-current', 'page')
+        </script>
+    </body>
+</html>
