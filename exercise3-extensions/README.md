@@ -27,4 +27,3 @@ Files you'll touch to make these improvements include:
 - `includes/_header.html`
 - `includes/_footer.html`
 - `scss/_header.scss`
-- `scss/pages/_about.scss`
