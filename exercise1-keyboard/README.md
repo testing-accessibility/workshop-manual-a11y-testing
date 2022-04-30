@@ -14,14 +14,20 @@ Tools that can help as you diagnose and fix keyboard access issues:
 
 ## Exercise: Improve keyboard accessibility in the megamenu, home, and about pages
 
-Using the files in this directory as a reference, improve keyboard access in these places:
+Using the files in this directory as a reference, improve keyboard access on these pages:
 
 - `index.html`
-- `_includes/header.html`
-- `about.html`
+- `about/index.html`
+
+URL to view "fixed" files locally:
+
+`http://localhost:1234/exercise1-keyboard`
 
 Files you'll touch to make these improvements include:
 
+- `index.html`
+- `about/index.html`
+- `_includes/header.html`
 - `js/menu.js`
 - `scss/_defaults.scss`
 - `scss/_header.scss`
