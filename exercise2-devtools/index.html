@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CampSpots</title>
+        <link rel="stylesheet" type="text/css" href="./styles.scss" />
+        <meta name="viewport" content="initial-scale=1" />
+    </head>
+    <body class="page-home">
+        <include src="exercise2-devtools/_includes/header.html"></include>
+        <div id="main">
+            <form class="main-search form-wrap layout" id="home-form">
+                <div class="form-field">
+                    <span class="label">Where to?</span>
+                    <div class="custom-input">
+                        <span class="icon-lookingglass"></span>
+                        <input type="text" placeholder="Try Oregon, Colorado..." />
+                    </div>
+                </div>
+                <div class="form-field">
+                    <span class="label">Dates</span>
+                    <div class="custom-input">
+                        <span class="icon-calendar"></span>
+                        <input type="text" placeholder="Enter dates" />
+                    </div>
+                </div>
+                <div class="form-field form-submit">
+                    <button class="btn-submit btn-lookingglass" onclick="javascript: alert('Submitted!');">
+                        <span class="icon-lookingglass-white"></span>
+                    </button>
+                </div>
+            </form>
+            <div class="wide-layout two-part-overlap">
+                <div class="content-block-wrap">
+                    <img src="/images/tents.jpg" alt="Tents at sunset" />
+                    <div class="content-block">
+                        <h3>Rest and relaxation is a part of life</h3>
+                        <p>We know you need a break. Get out of town, or stay and play. Taking rest and time away from the daily grind of life is essential for maintaining balance and positive well-being.</p>
+
+                        <p>At CampSpots, we can help connect you to your next adventure. Create memories you’ll remember fondly well into the future.</p>
+                            
+                        <p>By researching places, accomodations, and activities that match your lifestyle, you can have the time of your life.</p>
+                    </div>
+                </div>
+                <div class="link-block">
+                    <h4>Places to visit</h4>
+                    <ul class="link-list">
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Texas</a></li>
+                        <li><a href="#">Utah</a></li>
+                        <li><a href="#">Oregon</a></li>
+                        <li><a href="#">Alaska</a></li>
+                        <li><a href="#">Hawaii</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="layout three-parts">
+                <li class="item green">
+                    <img src="/images/icons/icon-treetag.svg" />
+                    <div class="header">Find your next adventure</div>
+                    <p>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="item yellow">
+                    <img src="/images/icons/icon-backpack.svg" />
+                    <div class="header">Know what to pack and what to leave at home</div>
+                    <p>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="item blue">
+                    <img src="/images/icons/icon-kayak.svg" />
+                    <div class="header">Arrange the best activities</div>
+                    <p>Vel rutrum est pharetra. Suspendisse eu mattis mi. Mauris vitae ornare urna, et ornare felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+            </ul>
+        </div>
+        <include src="_includes/footer.html"></include>
+        <script src="../exercise1-keyboard/menu.js"></script>
+    </body>
+</html>
