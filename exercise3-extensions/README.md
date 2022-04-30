@@ -18,7 +18,7 @@ Using the files in this directory as a reference, fix issues found on these page
 
 URL to view "fixed" files locally:
 
-`http://localhost:1234/exercise3-extensions`
+http://localhost:1234/exercise3-extensions
 
 Files you'll touch to make these improvements include:
 

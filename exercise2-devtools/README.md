@@ -17,7 +17,7 @@ Using the files in this directory as a reference, improve keyboard access on the
 
 URL to view "fixed" files locally:
 
-`http://localhost:1234/exercise2-devtools`
+http://localhost:1234/exercise2-devtools
 
 Files you'll touch to make these improvements include:
 

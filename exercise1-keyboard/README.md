@@ -21,7 +21,7 @@ Using the files in this directory as a reference, improve keyboard access on the
 
 URL to view "fixed" files locally:
 
-`http://localhost:1234/exercise1-keyboard`
+http://localhost:1234/exercise1-keyboard
 
 Files you'll touch to make these improvements include:
 

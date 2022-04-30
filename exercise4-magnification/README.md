@@ -20,7 +20,7 @@ Using the files in this directory as a reference, fix layout issues found on the
 
 URL to view "fixed" files locally:
 
-`http://localhost:1234/exercise4-magnification`
+http://localhost:1234/exercise4-magnification
 
 Files you'll touch to make these improvements include:
 
