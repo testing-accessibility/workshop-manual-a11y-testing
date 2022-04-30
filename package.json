@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A repo of exercises for the Testing Accessibility workshop: Manual Accessibility Testing & Tools",
   "scripts": {
-    "start": "parcel index.html exercise1-keyboard exercise2-devtools --no-source-maps",
+    "start": "parcel index.html exercise1-keyboard exercise2-devtools exercise3-extensions --no-source-maps",
     "build": "parcel build index.html --no-source-maps"
   },
   "repository": {

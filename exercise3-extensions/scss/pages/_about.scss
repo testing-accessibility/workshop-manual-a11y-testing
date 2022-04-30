@@ -1,0 +1,41 @@
+/* About Page */
+.page-about {
+    background-color: var(--bgcolor-content-page);
+    padding-bottom: 6em;
+}
+.page-about .form-wrap {
+    background-color: var(--bgcolor-form);
+    padding-bottom: 3em;
+}
+.page-about .form-wrap .label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+}
+.page-about .content-block p,
+.page-about .content-block address {
+    font-size: 1rem;
+    font-style: normal;
+    line-height: 1.5;
+    margin-bottom: 1em;
+}
+.page-about .content-block .contact {
+    align-items: flex-start;
+    display: flex;
+}
+.page-about .content-block [class^='icon-'] {
+    display: inline-block;
+    height: 1.5em;
+    margin-right: 0.5em;
+    width: 1.5em;
+}
+.page-about .content-block .icon-at {
+    color: #545050;
+    font-size: 1.3rem;
+    height: 1em;
+}
+.page-about .content-block .icon-house {
+    background: transparent url(/images/icons/icon-location.svg) no-repeat;
+    background-size: contain;
+    filter: invert(1);
+}

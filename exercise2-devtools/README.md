@@ -24,6 +24,9 @@ Files you'll touch to make these improvements include:
 - Color contrast: `scss/_header.scss`
 - Image alt text: `_includes/header.html`
 - Image alt text and semantic markup: `index.html`
+- Styling of lists:
+  - `scss/pages/_home.scss`
+  - `scss/_layouts.scss`
 
 You'll also find colors available to choose from in the main variables CSS file:
 

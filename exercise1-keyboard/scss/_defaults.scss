@@ -26,8 +26,17 @@ h3, .h3-style {
 h4, .h4-style {
     font-size: 1rem;
 }
+h5, .h5-style {
+    font-size: 0.95rem;
+}
 h4, h5, h6 {
     font-weight: normal;
+}
+.normal {
+    font-weight: normal;
+}
+.bold {
+    font-weight: bold;
 }
 a, a:link {
     color: var(--color-link);
