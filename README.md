@@ -121,6 +121,10 @@ we go through the material together.
 
 Contributions of any kind are welcome!
 
+## Workshop Resources
+
+Links from this and all of the Testing Accessibility workshops have been compiled on a resources page: https://workshop-resources.testingaccessibility.com/#workshops-testing
+
 <!-- prettier-ignore-start -->
 <!-->
 [yarn]: https://classic.yarnpkg.com/lang/en/
