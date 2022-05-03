@@ -23,6 +23,10 @@ URL to view "fixed" files locally:
 
 http://localhost:1234/exercise1-keyboard
 
+URL to view a deployed version for this exercise:
+
+https://workshop-manual-a11y-testing.testingaccessibility.com/exercise1-keyboard
+
 Files you'll touch to make these improvements include:
 
 - `index.html`

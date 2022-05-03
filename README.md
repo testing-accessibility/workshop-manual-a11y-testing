@@ -99,6 +99,8 @@ yarn start
 This should start the site for your browser at the address indicated in your Terminal:
 `http://localhost:1234`
 
+You can also view a deployed version: https://workshop-manual-a11y-testing.testingaccessibility.com/
+
 ## Working through the exercises
 
 This part of the project has **before** and **after** files for each of the 5 sections. The two pages we’ll work on in this Workshop are the Homepage and About page, starting from this URL: `http://localhost:1234`
