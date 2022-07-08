@@ -1,0 +1,46 @@
+/* The basics */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+      Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    margin: 0;
+    min-width: 320px;
+}
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+h3, .h3-style {
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+h4, .h4-style {
+    font-size: 1rem;
+}
+h5, .h5-style {
+    font-size: 0.95rem;
+}
+h4, h5, h6 {
+    font-weight: normal;
+}
+.normal {
+    font-weight: normal;
+}
+.bold {
+    font-weight: bold;
+}
+a, a:link {
+    color: var(--color-link);
+}
+a:hover {
+    color: var(--color-link-hover);
+}
